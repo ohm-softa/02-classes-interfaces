@@ -25,6 +25,7 @@ _Note: the concept of an iterator will be discussed in detail in a few weeks._
 ## Static and regular inner classes
 
 1. [What is a static class?](http://lmgtfy.com/?q=java+static+inner+class)
+	- Refresh your knowledge on UML (_e.g._ [here](http://plantuml.com/class-diagram))
 	- What's the difference between a regular inner and static inner class?
 	- Can you think of some use cases for both?
 2. Implement `Element` as static inner class of `SimpleList`.

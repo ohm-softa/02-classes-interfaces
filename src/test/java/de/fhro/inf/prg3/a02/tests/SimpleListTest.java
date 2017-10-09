@@ -1,4 +1,4 @@
-package de.fhro.inf.prg3.classesInterfaces.tests;
+package de.fhro.inf.prg3.a02.tests;
 
 import de.fhro.inf.prg3.a02.SimpleFilter;
 import de.fhro.inf.prg3.a02.SimpleListImpl;
