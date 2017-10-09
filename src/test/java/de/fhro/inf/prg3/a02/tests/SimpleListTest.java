@@ -1,7 +1,6 @@
 package de.fhro.inf.prg3.classesInterfaces.tests;
 
 import de.fhro.inf.prg3.a02.SimpleFilter;
-import de.fhro.inf.prg3.a02.SimpleList;
 import de.fhro.inf.prg3.a02.SimpleListImpl;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -44,7 +43,7 @@ public class SimpleListTest {
 
 	@Test
 	void testFilterAnonymousClass(){
-		SimpleList result = testList.filter(new SimpleFilter() {
+		SimpleListImpl result = (SimpleListImpl) testList.filter(new SimpleFilter() {
 			@Override
 			public boolean include(Object item) {
 				int current = (int)item;
