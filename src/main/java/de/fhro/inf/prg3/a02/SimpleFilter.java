@@ -1,4 +1,4 @@
-package de.fhro.inf.prg3.classesInterfaces;
+package de.fhro.inf.prg3.a02;
 
 /**
  * @author Peter Kurfer
@@ -6,5 +6,9 @@ package de.fhro.inf.prg3.classesInterfaces;
  */
 @FunctionalInterface
 public interface SimpleFilter {
+	/**
+	 * @param item Object to evaluate
+	 * @return true if the referenced object should be included.
+	 */
 	boolean include(Object item);
 }

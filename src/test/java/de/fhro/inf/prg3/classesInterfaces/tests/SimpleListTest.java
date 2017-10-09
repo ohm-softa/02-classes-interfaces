@@ -1,7 +1,8 @@
 package de.fhro.inf.prg3.classesInterfaces.tests;
 
-import de.fhro.inf.prg3.classesInterfaces.SimpleFilter;
-import de.fhro.inf.prg3.classesInterfaces.SimpleList;
+import de.fhro.inf.prg3.a02.SimpleFilter;
+import de.fhro.inf.prg3.a02.SimpleList;
+import de.fhro.inf.prg3.a02.SimpleListImpl;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -14,11 +15,11 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
  */
 public class SimpleListTest {
 
-	private SimpleList testList;
+	private SimpleListImpl testList;
 
 	@BeforeEach
 	void setup(){
-		testList = new SimpleList();
+		testList = new SimpleListImpl();
 
 		testList.add(1);
 		testList.add(2);
@@ -37,8 +38,8 @@ public class SimpleListTest {
 	}
 
 	@Test
-	void testGetSize(){
-		assertEquals(5, testList.getSize());
+	void testSize(){
+		assertEquals(5, testList.size());
 	}
 
 	@Test
@@ -59,7 +60,7 @@ public class SimpleListTest {
 
 	@Test
 	void testFilterLambda(){
-		SimpleList result = testList.filter(o -> ((int)o) % 2 == 0);
+		SimpleListImpl result = (SimpleListImpl) testList.filter(o -> ((int)o) % 2 == 0);
 		for(Object o : result){
 			int i = (int)o;
 			assertTrue(i % 2 == 0);
