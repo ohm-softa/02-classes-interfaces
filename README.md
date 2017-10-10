@@ -30,18 +30,18 @@ _Note: the concept of an iterator will be discussed in detail in a few weeks._
 	- Refresh your knowledge on UML (_e.g._ [here](http://plantuml.com/class-diagram))
 	- What's the difference between a regular inner and static inner class?
 	- Can you think of some use cases for both?
-2. Implement `Element` as static inner class of `SimpleList`.
+2. Implement `Element` as static inner class of `SimpleListImpl`.
 	- Why is this class static, and ideally `private`?
-3. Implement the `Iterator` interface as inner class of `SimpleList`.
+3. Implement the `Iterator` interface as inner class of `SimpleListImpl`.
 	- Why is it helpful to make this class non-static?
-4. Add the `Iterable` interface to your `SimpleList`, and implement the required methods.
+4. Add the `Iterable` interface to your `SimpleListImpl`, and implement the required methods.
 	- Why is implementing the `Iterable` interface essential for a (good) list implementation? (Hint: Check the test cases!)
 	- Are there any language definition constraints to this?
 
 
 ## Anonymous (inner) classes and lambda expressions
 
-1. Implement the `filter` method for your `SimpleList` class (see `SimpleFilter` interface).
+1. Implement the `filter` method for your `SimpleListImpl` class (see `SimpleFilter` interface).
 2. Check the given test suite for an example on 
 	- how to use an anonymous class with an interface.
 	- how an anonymous class can be replaced by a lambda expression.
