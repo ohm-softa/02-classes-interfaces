@@ -22,7 +22,7 @@ class SimpleListImpl implements SimpleList, Iterable {
 	-head : Element
 	+void add(Object item)
     +int size()
-    +SimpleList filter(SimpleFilter filter)   
+    +SimpleList filter(SimpleFilter filter)
 }
 
 -class SimpleIteratorImpl implements Iterator {
@@ -35,6 +35,7 @@ class SimpleListImpl implements SimpleList, Iterable {
 
 Element --* SimpleListImpl : head
 Element --* Element : next
-SimpleFilter <-- SimpleList
-SimpleIteratorImpl --> SimpleListImpl
+Element --+ SimpleListImpl
+SimpleFilter <.. SimpleList
+SimpleIteratorImpl --+ SimpleListImpl
 @enduml
