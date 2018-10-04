@@ -1,4 +1,4 @@
-package de.fhro.inf.prg3.a02;
+package de.thro.inf.prg3.a02;
 
 public interface SimpleList {
 	/**

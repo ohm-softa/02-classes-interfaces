@@ -3,7 +3,7 @@ plugins {
     id 'idea'
 }
 
-group 'de.fhro.inf.prg3'
+group 'de.thro.inf.prg3'
 version '1.0-SNAPSHOT'
 
 sourceCompatibility = 1.8

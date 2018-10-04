@@ -1,7 +1,7 @@
-package de.fhro.inf.prg3.a02.tests;
+package de.thro.inf.prg3.a02.tests;
 
-import de.fhro.inf.prg3.a02.SimpleFilter;
-import de.fhro.inf.prg3.a02.SimpleListImpl;
+import de.thro.inf.prg3.a02.SimpleFilter;
+import de.thro.inf.prg3.a02.SimpleListImpl;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
