@@ -1,5 +1,7 @@
 _This is an assignment to the class [Programmieren 3](https://hsro-inf-prg3.github.io) at the [University of Applied Sciences Rosenheim](http://www.fh-rosenheim.de)._
 
+![Build state](https://travis-ci.org/hsro-inf-prg3/02-classes-interfaces.svg?branch=musterloesung)
+
 # Assignment 2: Classes and interfaces revisited
 
 In this assignment we'll be looking at 
