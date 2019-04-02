@@ -1,7 +1,7 @@
-package de.thro.inf.prg3.a02.tests;
+package ohm.softa.a02.tests;
 
-import de.thro.inf.prg3.a02.SimpleFilter;
-import de.thro.inf.prg3.a02.SimpleListImpl;
+import ohm.softa.a02.SimpleFilter;
+import ohm.softa.a02.SimpleListImpl;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

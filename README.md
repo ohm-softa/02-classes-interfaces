@@ -1,4 +1,4 @@
-_This is an assignment to the class [Programmieren 3](https://hsro-inf-prg3.github.io) at the [University of Applied Sciences Rosenheim](http://www.fh-rosenheim.de)._
+_This is an assignment to the [Software Architecture](https://ohm-softa.github.io) class at the [Technische Hochschule Nürnberg](http://www.th-nuernberg.de)._
 
 ![Build state](https://travis-ci.org/hsro-inf-prg3/02-classes-interfaces.svg?branch=musterloesung)
 
