@@ -1,4 +1,4 @@
-package de.thro.inf.prg3.a02;
+package ohm.softa.a02;
 
 public interface SimpleList {
 	/**
