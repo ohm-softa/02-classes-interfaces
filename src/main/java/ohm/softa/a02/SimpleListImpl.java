@@ -7,7 +7,7 @@ import java.lang.Iterable;
  * @author Peter Kurfer
  * Created on 10/6/17.
  */
-public class SimpleListImpl implements SimpleList, Iterable<Object> {
+public class SimpleListImpl implements SimpleList, Iterable {
 
     private static class Element {
         private Object obj;
@@ -18,16 +18,46 @@ public class SimpleListImpl implements SimpleList, Iterable<Object> {
             this.next = null;
         }
 
-        public Element GetNext() {
+        public Object getObj() {
+            return obj;
+        }
+
+        public void setObj(Object obj) {
+            this.obj = obj;
+        }
+
+        public Element getNext() {
             return next;
         }
 
-        public void SetNext(Element next) {
+        public void setNext(Element next) {
             this.next = next;
         }
     }
 
+    private class SimpleIteratorImpl implements Iterator {
+        Element current;
+
+        public SimpleIteratorImpl() {
+            current = SimpleListImpl.this.head;
+        }
+
+        @Override
+        public boolean hasNext() {
+            return current != null;
+        }
+
+        @Override
+        public Object next() {
+            Object obj = current.obj;
+            current = current.next;
+
+            return obj;
+        }
+    }
+
     private Element head;
+
     private int size;
 
     public SimpleListImpl() {
@@ -36,15 +66,14 @@ public class SimpleListImpl implements SimpleList, Iterable<Object> {
 
     @Override
     public void add(Object obj) {
-
         if (head == null) {
             head = new Element(obj);
         } else {
             Element current = head;
-            while (current.GetNext() != null) {
-                current = current.GetNext();
+            while (current.next != null) {
+                current = current.next;
             }
-            current.SetNext(new Element(obj));
+            current.next = new Element(obj);
         }
         size++;
     }
@@ -68,7 +97,7 @@ public class SimpleListImpl implements SimpleList, Iterable<Object> {
     }
 
     @Override
-    public Iterator<Object> iterator() {
-        return null;
+    public Iterator iterator() {
+        return new SimpleIteratorImpl();
     }
 }
