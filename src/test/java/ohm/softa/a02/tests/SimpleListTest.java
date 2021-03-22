@@ -58,11 +58,36 @@ public class SimpleListTest {
 	}
 
 	@Test
+	void testFilterWithEveryThirdNumber() {
+		SimpleListImpl result = (SimpleListImpl) testList.filter(new SimpleFilter() {
+			private int ctr = 0;
+
+			@Override
+			public boolean include(Object item) {
+				ctr++;
+
+				return ctr % 3 == 0;
+			}
+		});
+
+		assertEquals(1, result.size());
+	}
+
+	@Test
 	void testFilterLambda(){
 		SimpleListImpl result = (SimpleListImpl) testList.filter(o -> ((int)o) % 2 == 0);
 		for(Object o : result){
 			int i = (int)o;
 			assertTrue(i % 2 == 0);
+		}
+	}
+
+	@Test
+	void testFilterLambdaLowerOrEqualThanThree(){
+		SimpleListImpl result = (SimpleListImpl) testList.filter(o -> ((int)o) <= 3);
+		for(Object o : result){
+			int i = (int)o;
+			assertTrue(i <= 3);
 		}
 	}
 }
