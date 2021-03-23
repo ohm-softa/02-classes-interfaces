@@ -1,6 +1,7 @@
 package ohm.softa.a02.tests;
 
 import ohm.softa.a02.SimpleFilter;
+import ohm.softa.a02.SimpleList;
 import ohm.softa.a02.SimpleListImpl;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

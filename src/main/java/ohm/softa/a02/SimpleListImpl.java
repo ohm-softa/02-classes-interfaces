@@ -10,28 +10,13 @@ import java.lang.Iterable;
 public class SimpleListImpl implements SimpleList, Iterable {
 
     private static class Element {
+
         private Object obj;
         private Element next;
 
         Element(Object obj) {
             this.obj = obj;
             this.next = null;
-        }
-
-        public Object getObj() {
-            return obj;
-        }
-
-        public void setObj(Object obj) {
-            this.obj = obj;
-        }
-
-        public Element getNext() {
-            return next;
-        }
-
-        public void setNext(Element next) {
-            this.next = next;
         }
     }
 
@@ -57,7 +42,6 @@ public class SimpleListImpl implements SimpleList, Iterable {
     }
 
     private Element head;
-
     private int size;
 
     public SimpleListImpl() {
