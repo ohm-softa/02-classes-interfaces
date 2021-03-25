@@ -18,8 +18,8 @@ public class SimpleListTest {
 
 	@BeforeEach
 	void setup(){
-		testList = new SimpleListImpl();
 
+		testList = new SimpleListImpl();
 		testList.add(1);
 		testList.add(2);
 		testList.add(3);
@@ -29,6 +29,7 @@ public class SimpleListTest {
 
 	@Test
 	void testAddElements(){
+
 		int counter = 0;
 		for(Object o : testList){
 			counter++;
@@ -46,7 +47,7 @@ public class SimpleListTest {
 		SimpleListImpl result = (SimpleListImpl) testList.filter(new SimpleFilter() {
 			@Override
 			public boolean include(Object item) {
-				int current = (int)item;
+				int current = (int) item;
 				return current > 2;
 			}
 		});

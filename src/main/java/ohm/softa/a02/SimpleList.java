@@ -1,6 +1,6 @@
 package ohm.softa.a02;
 
-public interface SimpleList {
+public interface SimpleList extends SimpleFilter {
 	/**
 	 * Add a given object to the back of the list.
 	 */
